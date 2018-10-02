@@ -14,7 +14,7 @@ let rec perm = function
 
 let rec fold f i = function
     | [] -> i
-    | x::xs -> f x (fold f i xs)            
+    | x::xs -> f x (fold f i xs)
 
 fold (fun x acc -> "f("+string(x)+","+acc+")") "empty" [1;2;3]
 
